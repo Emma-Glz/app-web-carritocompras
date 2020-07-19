@@ -38,7 +38,7 @@ public class Controlador extends HttpServlet {
         switch (accion) {
             case "carrito":
                 totalPagar = 0.0;
-                request.setAttribute("Carrito", listaCarrito);
+                request.setAttribute("Carrito", listaCarrito) ;
                 for (int i = 0; i < listaCarrito.size(); i++) {
                     totalPagar = totalPagar + listaCarrito.get(i).getSubTotal();
                 }
